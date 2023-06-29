@@ -47,3 +47,5 @@ void load() {
 	DobbyHook(dlsym(dlopen("libcocos2dcpp.so", RTLD_LAZY), "_ZN9MenuLayer11onMoreGamesEPN7cocos2d8CCObjectE"), (void*) onMoreGames, (void**) &onMoreGames_o);
 }
 ```
+## Documentation
+Documentation with examples and tutorials can be found [here](https://google.com).
