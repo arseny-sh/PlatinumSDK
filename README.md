@@ -58,3 +58,8 @@ void load() {
 Documentation with examples and tutorials can be found [here](https://google.com).
 ## New to modding?
 Get help [here](https://discord.gg/6a8gV5zpbx) (Russians only).
+## Credits
+[ItalianApkDownloader](https://github.com/ItalianApkDownloader) for [Geometry Dash headers for Android](https://github.com/ItalianApkDownloader/gdh)
+
+[HJfod](https://github.com/HJfod) for [Cocos2D-x headers](https://github.com/HJfod/cocos-headers)
+
