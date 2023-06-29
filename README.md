@@ -44,7 +44,14 @@ void onMoreGames(MenuLayer* self) {
 
 __attribute__((constructor))
 void load() {
-	DobbyHook(dlsym(dlopen("libcocos2dcpp.so", RTLD_LAZY), "_ZN9MenuLayer11onMoreGamesEPN7cocos2d8CCObjectE"), (void*) onMoreGames, (void**) &onMoreGames_o);
+	DobbyHook(
+		dlsym(
+			dlopen("libcocos2dcpp.so", RTLD_LAZY),
+			"_ZN9MenuLayer11onMoreGamesEPN7cocos2d8CCObjectE"
+		),
+		(void*) onMoreGames,
+		(void**) &onMoreGames_o
+	);
 }
 ```
 ## Documentation
