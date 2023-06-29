@@ -56,3 +56,5 @@ void load() {
 ```
 ## Documentation
 Documentation with examples and tutorials can be found [here](https://google.com).
+## New to modding?
+Get help [here](https://discord.gg/6a8gV5zpbx) (Russian only).
