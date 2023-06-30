@@ -55,7 +55,7 @@ void load() {
 }
 ```
 ## Documentation
-Documentation with examples and tutorials can be found [here](https://google.com).
+Documentation with examples and tutorials can be found [here](https://arseny-sh.github.io/platinumsdk/).
 ## New to modding?
 Get help [here](https://discord.gg/6a8gV5zpbx) (Russians only).
 ## Credits
