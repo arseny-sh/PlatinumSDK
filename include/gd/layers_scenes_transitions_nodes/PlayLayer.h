@@ -152,7 +152,24 @@
 		PAD(1);
 
 
-		void cameraMoveY(float,float,float);
+		// Platinum SDK 1.1.0 Update
+   		virtual bool init(GJGameLevel* level);
+   		void cameraMoveX(float, float, float);
+   		void cameraMoveY(float, float, float);
+		void shakeCamera(float, float, float);
+   		void showNewBest(bool, int, int, bool, bool, bool);
+   		void showEndLayer();
+   		void updateCamera(float);
+   		void destroyPlayer(PlayerObject*, GameObject*);
+   		void levelComplete();
+   		void spawnFirework();
+   		void showRetryLayer();
+   		void moveCameraToPos(cocos2d::CCPoint);
+   		void stopCameraShake();
+   		void removeAllObjects();
+		void resumeAndRestart();
+   		void toggleProgressbar();
+   		void showCompleteEffect();
 	};
 
 
