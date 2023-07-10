@@ -46,7 +46,7 @@
 		GJDropDownLayer();
 		bool init(const char* title, float height);
 
-		static GJDropDownLayer* create(const char* title, float height) ;
+		static GJDropDownLayer* create(const char* title, float height);
 	};
 	#pragma runtime_checks("s", restore)
 
