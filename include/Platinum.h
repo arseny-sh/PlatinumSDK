@@ -8,10 +8,8 @@
 #include <cocos2d.h>
 #include <dlfcn.h>
 #include <dobby.h>
-//#include <Modify/include_all.h>
+#include "platlang.h" // EXCLUSIVE
 
 using namespace cocos2d;
-
-#define Hook(address, rep, origin) DobbyHook(dlsym(dlopen("libcocos2dcpp.so", RTLD_LAZY), address), (void*)rep, (void**)&origin)
 
 #endif
