@@ -7,8 +7,10 @@ include $(CLEAR_VARS)
 LOCAL_CPP_FEATURES := rtti
 LOCAL_MODULE := dobby
 LOCAL_C_INCLUDES := include/dobby.h
-LOCAL_SRC_FILES := libraries/libdobby.so
-include $(PREBUILT_SHARED_LIBRARY)
+LOCAL_SRC_FILES := libraries/libdobby.a
+LOCAL_LDLIBS := -llog
+LOCAL_EXPORT_LDLIBS := -llog
+include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 COCOS_PATH := $(LOCAL_PATH)/include/cocos2dx

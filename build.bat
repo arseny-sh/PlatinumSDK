@@ -11,7 +11,7 @@ if NOT %NDK:~-1% == \ (
 	)
 )
 
-echo Platinum SDK version 1.1.0
+echo Platinum SDK version 2.0.0
 echo =================================
 call %NDK%ndk-build.cmd NDK_PROJECT_PATH=./ NDK_APPLICATION_MK=./app.mk MAIN_LOCAL_PATH=. APP_BUILD_SCRIPT=./build.mk NDK_LIBS_OUT=./out
 echo =================================
