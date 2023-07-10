@@ -2,15 +2,13 @@
 #include <Modify/MenuLayer.h>
 
 void onMoreGames(MenuLayer* self) {
-	FLAlertLayer::create(
-		nullptr,
+	Alert(
 		"Platinum SDK",
 		"Hello, World!",
-		"Close", NULL
+		"Close", empty
 	)->show();
 }
 
-__attribute__((constructor))
-void load() {
-	MenuLayer_Hooks::onMoreGames((void*) onMoreGames);
+Loader {
+	MenuLayer_Hooks::onMoreGames(hook(onMoreGames));
 }
