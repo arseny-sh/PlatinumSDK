@@ -10,17 +10,15 @@ This example overwrites the response of the More Games button on the main menu t
 #include <Modify/MenuLayer.h>
 
 void onMoreGames(MenuLayer* self) {
-	FLAlertLayer::create(
-		nullptr,
+	Alert(
 		"Platinum SDK",
 		"Hello, World!",
-		"Close", NULL
+		"Close", empty
 	)->show();
 }
 
-__attribute__((constructor))
-void load() {
-	MenuLayer_Hooks::onMoreGames((void*) onMoreGames);
+Loader {
+	MenuLayer_Hooks::onMoreGames(hook(onMoreGames));
 }
 ```
 The same example on a regular SDK:
